@@ -5,3 +5,4 @@ Refactoring Martin Fowler example
 3 - Move method to rental and rename method and call
 4 - Inline this amount
 5 - Extract frequent renter points
+6 - Inline total amounts
