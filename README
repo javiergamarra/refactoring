@@ -7,3 +7,4 @@ Refactoring Martin Fowler example
 5 - Extract frequent renter points and inline
 6 - Inline total amounts
 7 - Move switch to movie
+8 - Change setter and create classes
