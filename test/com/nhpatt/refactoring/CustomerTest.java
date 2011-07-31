@@ -13,11 +13,9 @@ public class CustomerTest {
 	private static final int FOUR_DAYS = 4;
 
 	private Customer customer;
-	private final Movie regular = new Movie("A New Hope", Movie.REGULAR);
-	private final Movie childrens = new Movie("A Phantom Menace",
-			Movie.CHILDRENS);
-	private final Movie newRelease = new Movie("Revenge of the Sith",
-			Movie.NEW_RELEASE);
+	private final Movie regular = Movie.regular("A New Hope");
+	private final Movie childrens = Movie.childrens("A Phantom Menace");
+	private final Movie newRelease = Movie.newRelease("Revenge of the Sith");
 
 	@Before
 	public void setUp() {

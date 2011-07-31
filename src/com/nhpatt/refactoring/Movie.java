@@ -2,36 +2,33 @@ package com.nhpatt.refactoring;
 
 public class Movie {
 
-	public static final int CHILDRENS = 2;
-	public static final int REGULAR = 0;
-	public static final int NEW_RELEASE = 1;
-
 	private final String title;
 	private Price price;
 
-	public Movie(final String title, final int priceCode) {
+	public Movie(final String title) {
 		this.title = title;
-		setPriceCode(priceCode);
 	}
 
 	public String getTitle() {
 		return title;
 	}
 
-	public void setPriceCode(final int priceCode) {
-		switch (priceCode) {
-		case REGULAR:
-			price = new RegularPrice();
-			break;
-		case CHILDRENS:
-			price = new ChildrensPrice();
-			break;
-		case NEW_RELEASE:
-			price = new NewReleasePrice();
-			break;
-		default:
-			break;
-		}
+	public static Movie regular(final String title) {
+		final Movie movie = new Movie(title);
+		movie.price = new RegularPrice();
+		return movie;
+	}
+
+	public static Movie childrens(final String title) {
+		final Movie movie = new Movie(title);
+		movie.price = new ChildrensPrice();
+		return movie;
+	}
+
+	public static Movie newRelease(final String title) {
+		final Movie movie = new Movie(title);
+		movie.price = new NewReleasePrice();
+		return movie;
 	}
 
 	double getCharge(final int daysRented) {
