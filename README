@@ -1,3 +1,4 @@
 Refactoring Martin Fowler example
 
 1 - Extrar switch to method
+2 - Rename variables in amountFor
