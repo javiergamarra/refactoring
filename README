@@ -8,3 +8,4 @@ Refactoring Martin Fowler example
 6 - Inline total amounts
 7 - Move switch to movie
 8 - Change setter and create classes
+9 - Change getter and setter and cleaning
