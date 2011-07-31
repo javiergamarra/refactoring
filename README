@@ -4,5 +4,6 @@ Refactoring Martin Fowler example
 2 - Rename variables in amountFor
 3 - Move method to rental and rename method and call
 4 - Inline this amount
-5 - Extract frequent renter points
+5 - Extract frequent renter points and inline
 6 - Inline total amounts
+7 - Move switch to movie
