@@ -1,6 +1,6 @@
 Refactoring Martin Fowler example
 
-1 - Extrar switch to method
+1 - Extract switch to method
 2 - Rename variables in amountFor
 3 - Move method to rental and rename method and call
 4 - Inline this amount
